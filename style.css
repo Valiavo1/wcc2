@@ -1,7 +1,11 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("font/Montserrat.ttf");
+}
+
 body{
     font-family: Montserrat;
-    background-color: #0b006f;
-    height: 120vh;
+    height: auto;
     margin: 0;
     padding: 0;
     display: flex;
@@ -125,7 +129,6 @@ body{
 .profile_image{
     width: 90px;
     height: 90px;
-    background: black;
     border-radius: 50%;
 }
 
@@ -171,6 +174,27 @@ body{
     margin-left: 20px;
 }
 
+.my_text{
+    margin-top: 6px;
+    color: #5a4ee5;
+}
+
+.param_icon{
+    opacity: 0.3;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 10px;
+    width: 10px;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.param_icon:hover{
+    transition: 0.5s;
+    opacity: 1;
+}
+
 .scale{
     font-size: 26px;
     font-weight: bold;
@@ -191,7 +215,11 @@ body{
     width: 48px;
     border-radius: 50%;
     border: 2px white solid;
-    background: red;
+}
+
+.user_img:hover{
+    transform: scale(1.1);
+    transition:.3s;
 }
 
 .u_two{
@@ -283,6 +311,22 @@ body{
     transition: 2s;
 }
 
+.text_footer{
+    margin-left: -26px;
+    opacity: 0.3;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.image_footer{
+    opacity: 0.3;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
 /*code V -----------------------------------*/
 
 .one_first{
@@ -308,6 +352,11 @@ body{
 
     .content_right{
         width: 100%;
+    }
+
+    .text_footer{
+        margin-left: 15px;
+        opacity: 0.3;
     }
 
     .content_left{
